@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline;text-decoration:none}
+body{font-family: 'Cairo', sans-serif;background:#FAFAFA;color:#4F4F4F;width:100%;height:100%}
+a{}
+a:hover{}
+.clear{clear:both}
+h1,h2,h3,h4,h5{margin:0;padding:0}
+#wrap{width:100%;margin:0 auto}
+#header{background:#fafafa}
+.colors{height:5px;margin-left:40px;max-width:450px;width:100%}
+.colors div{height:100%;width:33.33%;display:block;float:left}
+.colors .green{background:#1ABC9C}
+.colors .orange{background:#D35400}
+.colors .violet{background:#8E44AD}
+.back a,
+.backteam a,
+.backcontact a{color:#D6D6D6;transition:0.2s linear}
+.back a:hover{color:#1abc9c}
+.backteam a:hover{color:#d35400}
+.backcontact a:hover{color:#8e44ad}
+#logo,
+#title{display:block;font-size:28px;line-height:28px;padding:40px;width:42%}
+a.logolink{color:#4F4F4F}
+#logo
+span{font-size:32px}#menu-en{}#works a,
+#team a,
+#contact a{color:#4F4F4F;font-size:40px;text-transform:uppercase;padding:28px 40px;display:block;transition:all 0.2s ease 0.2s;-webkit-transition:all 0.2s ease 0.2s;-moz-transition:all 0.2s ease 0.2s;-o-transition:all 0.2s ease 0.2s;background-repeat:no-repeat}
+#works a:hover,
+#team a:hover,
+#contact a:hover{background-repeat:no-repeat;padding:28px 120px;transition:all 0.2s ease 0.2s;-webkit-transition:all 0.2s ease 0.2s;-moz-transition:all 0.2s ease 0.2s;-o-transition:all 0.2s ease 0.2s}
+#works a{background:url(/icons/dots-menu.svg) no-repeat -125px center #F6F6F6}
+#works a:hover{background:url(/icons/dots-menu.svg) no-repeat 25px center #1abc9c; color:#F6F6F6}
+#team a{background:url(/web/20190219023902im_/https://web240.com/wp-content/themes/web240/images/team-icon.png) no-repeat -125px center #EDEDED}
+#team a:hover{background:url(/web/20190219023902im_/https://web240.com/wp-content/themes/web240/images/team-icon.png) no-repeat 25px center #d35400;color:#EDEDED}
+#contact a{background:url(/web/20190219023902im_/https://web240.com/wp-content/themes/web240/images/contact-icon.png) no-repeat -125px center #D6D6D6}
+#contact a:hover{background:url(/web/20190219023902im_/https://web240.com/wp-content/themes/web240/images/contact-icon.png) no-repeat 25px center #8e44ad;color:#D6D6D6}
+#works span, #team span, #contact span{display:block;font-family:'PFH Thin';font-size:24px;line-height:24px;text-transform:lowercase}
+.category-works{max-width:1366px}.date_back{font-size:36px}
+.post-title{margin-bottom:25px}
+.link div{background:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ1Ny4wMyA0NTcuMDMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1Ny4wMyA0NTcuMDM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNNDIxLjUxMiwyMDcuMDc0bC04NS43OTUsODUuNzY3Yy00Ny4zNTIsNDcuMzgtMTI0LjE2OSw0Ny4zOC0xNzEuNTI5LDBjLTcuNDYtNy40MzktMTMuMjk2LTE1LjgyMS0xOC40MjEtMjQuNDY1ICAgbDM5Ljg2NC0zOS44NjFjMS44OTUtMS45MTEsNC4yMzUtMy4wMDYsNi40NzEtNC4yOTZjMi43NTYsOS40MTYsNy41NjcsMTguMzMsMTQuOTcyLDI1LjczNmMyMy42NDgsMjMuNjY3LDYyLjEyOCwyMy42MzQsODUuNzYyLDAgICBsODUuNzY4LTg1Ljc2NWMyMy42NjYtMjMuNjY0LDIzLjY2Ni02Mi4xMzUsMC04NS43ODFjLTIzLjYzNS0yMy42NDYtNjIuMTA1LTIzLjY0Ni04NS43NjgsMGwtMzAuNDk5LDMwLjUzMiAgIGMtMjQuNzUtOS42MzctNTEuNDE1LTEyLjIyOC03Ny4zNzMtOC40MjRsNjQuOTkxLTY0Ljk4OWM0Ny4zOC00Ny4zNzEsMTI0LjE3Ny00Ny4zNzEsMTcxLjU1NywwICAgQzQ2OC44NjksODIuODk3LDQ2OC44NjksMTU5LjcwNiw0MjEuNTEyLDIwNy4wNzR6IE0xOTQuNzA4LDM0OC4xMDRsLTMwLjUyMSwzMC41MzJjLTIzLjY0NiwyMy42MzQtNjIuMTI4LDIzLjYzNC04NS43NzgsMCAgIGMtMjMuNjQ4LTIzLjY2Ny0yMy42NDgtNjIuMTM4LDAtODUuNzk1bDg1Ljc3OC04NS43NjdjMjMuNjY1LTIzLjY2Miw2Mi4xMjEtMjMuNjYyLDg1Ljc2NywwICAgYzcuMzg4LDcuMzksMTIuMjA0LDE2LjMwMiwxNC45ODYsMjUuNzA2YzIuMjQ5LTEuMzA3LDQuNTYtMi4zNjksNi40NTQtNC4yNjZsMzkuODYxLTM5Ljg0NSAgIGMtNS4wOTItOC42NzgtMTAuOTU4LTE3LjAzLTE4LjQyMS0yNC40NzdjLTQ3LjM0OC00Ny4zNzEtMTI0LjE3Mi00Ny4zNzEtMTcxLjU0MywwTDM1LjUyNiwyNDkuOTYgICBjLTQ3LjM2Niw0Ny4zODUtNDcuMzY2LDEyNC4xNzIsMCwxNzEuNTUzYzQ3LjM3MSw0Ny4zNTYsMTI0LjE3Nyw0Ny4zNTYsMTcxLjU0NywwbDY1LjAwOC02NS4wMDMgICBDMjQ2LjEwOSwzNjAuMzM2LDIxOS40MzcsMzU3LjcyMywxOTQuNzA4LDM0OC4xMDR6IiBmaWxsPSIjNGY0ZjRmIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);background-size:40px 40px;width:40px;height:40px;display:inline-block;transition:all 0.2s linear}
+a.link:hover div{background:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ1Ny4wMyA0NTcuMDMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1Ny4wMyA0NTcuMDM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNNDIxLjUxMiwyMDcuMDc0bC04NS43OTUsODUuNzY3Yy00Ny4zNTIsNDcuMzgtMTI0LjE2OSw0Ny4zOC0xNzEuNTI5LDBjLTcuNDYtNy40MzktMTMuMjk2LTE1LjgyMS0xOC40MjEtMjQuNDY1ICAgbDM5Ljg2NC0zOS44NjFjMS44OTUtMS45MTEsNC4yMzUtMy4wMDYsNi40NzEtNC4yOTZjMi43NTYsOS40MTYsNy41NjcsMTguMzMsMTQuOTcyLDI1LjczNmMyMy42NDgsMjMuNjY3LDYyLjEyOCwyMy42MzQsODUuNzYyLDAgICBsODUuNzY4LTg1Ljc2NWMyMy42NjYtMjMuNjY0LDIzLjY2Ni02Mi4xMzUsMC04NS43ODFjLTIzLjYzNS0yMy42NDYtNjIuMTA1LTIzLjY0Ni04NS43NjgsMGwtMzAuNDk5LDMwLjUzMiAgIGMtMjQuNzUtOS42MzctNTEuNDE1LTEyLjIyOC03Ny4zNzMtOC40MjRsNjQuOTkxLTY0Ljk4OWM0Ny4zOC00Ny4zNzEsMTI0LjE3Ny00Ny4zNzEsMTcxLjU1NywwICAgQzQ2OC44NjksODIuODk3LDQ2OC44NjksMTU5LjcwNiw0MjEuNTEyLDIwNy4wNzR6IE0xOTQuNzA4LDM0OC4xMDRsLTMwLjUyMSwzMC41MzJjLTIzLjY0NiwyMy42MzQtNjIuMTI4LDIzLjYzNC04NS43NzgsMCAgIGMtMjMuNjQ4LTIzLjY2Ny0yMy42NDgtNjIuMTM4LDAtODUuNzk1bDg1Ljc3OC04NS43NjdjMjMuNjY1LTIzLjY2Miw2Mi4xMjEtMjMuNjYyLDg1Ljc2NywwICAgYzcuMzg4LDcuMzksMTIuMjA0LDE2LjMwMiwxNC45ODYsMjUuNzA2YzIuMjQ5LTEuMzA3LDQuNTYtMi4zNjksNi40NTQtNC4yNjZsMzkuODYxLTM5Ljg0NSAgIGMtNS4wOTItOC42NzgtMTAuOTU4LTE3LjAzLTE4LjQyMS0yNC40NzdjLTQ3LjM0OC00Ny4zNzEtMTI0LjE3Mi00Ny4zNzEtMTcxLjU0MywwTDM1LjUyNiwyNDkuOTYgICBjLTQ3LjM2Niw0Ny4zODUtNDcuMzY2LDEyNC4xNzIsMCwxNzEuNTUzYzQ3LjM3MSw0Ny4zNTYsMTI0LjE3Nyw0Ny4zNTYsMTcxLjU0NywwbDY1LjAwOC02NS4wMDMgICBDMjQ2LjEwOSwzNjAuMzM2LDIxOS40MzcsMzU3LjcyMywxOTQuNzA4LDM0OC4xMDR6IiBmaWxsPSIjZDM1NDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);background-size:40px 40px}
+.demos-layout{position:relative}
+.homepage-demo{background:url(/web/20190219023902im_/https://web240.com/wp-content/themes/web240/images/works-bg.png) no-repeat center top #fff;width:100%;margin:0;padding:0;overflow:hidden;height:260px;position:relative;z-index:9;box-shadow:0 0 40px #333 inset;-moz-box-shadow:inset 0 0 40px #333;-webkit-box-shadow:inset 0 0 40px #333}
+.homepage-demo:hover{background:url(/web/20190219023902im_/https://web240.com/wp-content/themes/web240/images/works-bg.png) no-repeat center -260px #fff !important;cursor:pointer}
+.homepage-demo img{}
+.content{background:#F4F4F4;font-size:60px;padding:40px;display:block;position:relative}
+.works_layout{max-width:900px}
+.preview{float:left;height:auto;width:33%;display:block;max-height:300px;margin:0.16%}
+.preview img{max-width:300px;width:100%}.fix_right{float:right;position:absolute;top:180px;left:980px}
+.fix_right ul{padding:0;margin:0;list-style:none}
+.fix_right li{font-size:36px}
+.content .wpcf7-form{font-size:28px;width:60%;min-width:280px}
+.content .wpcf7-form input[type=text], .content .wpcf7-form input[type=email], .content .wpcf7-form textarea{width:100%;font-size:24px;padding:8px 16px;background:#fafafa;border:none;border-bottom:2px solid #D6D6D6;margin:10px 0 21px;transition:all .2s ease}
+.content .wpcf7-form input.wpcf7-not-valid, .content .wpcf7-form textarea.wpcf7-not-valid{background-color:#ffebee}
+.content .wpcf7-form input:hover, .content .wpcf7-form textarea:hover, .content .wpcf7-form input:focus, .content .wpcf7-form textarea:focus{border-bottom:2px solid #000;background:#fafafa}
+.content .wpcf7-form input[type=submit]{background:#1abc9c;border:none;border-radius:0;color:#fafafa;padding:8px 16px;text-transform:uppercase;font-size:1em}
+.content .wpcf7-form input[type=submit]:hover{cursor:pointer}
+.wpcf7-not-valid-tip,.wpcf7-validation-errors{display:none !important}
+#footer{background:#000;padding:28px 40px;height:200px}
+#colophon{color:#D6D6D6}
+.foot-logo,.foot-phone,.foot-mail{float:left;font-size:28px;padding-right:60px;text-transform:uppercase;width:auto}
+.foot-logo span, .foot-phone span, .foot-mail span{font-size:21px;display:block;text-transform:lowercase;font-family:'PFH Thin';line-height: .6em}
+div.wpcf7{margin:0;padding:0}
+div.wpcf7 .screen-reader-response{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);height:1px;width:1px;margin:0;padding:0;border:0}
+div.wpcf7-response-output{margin:2em 0.5em 1em;padding:0.2em 1em;border:2px solid #f00}
+div.wpcf7-mail-sent-ok{border:2px solid #398f14}
+div.wpcf7-mail-sent-ng,div.wpcf7-aborted{border:2px solid #f00}
+div.wpcf7-spam-blocked{border:2px solid #ffa500}
+div.wpcf7-validation-errors,div.wpcf7-acceptance-missing{border:2px solid #f7e700}
+.wpcf7-form-control-wrap{position:relative}
+span.wpcf7-not-valid-tip{color:#f00;font-size:1em;font-weight:normal;display:block}
+.use-floating-validation-tip span.wpcf7-not-valid-tip{position:absolute;top:20%;left:20%;z-index:100;border:1px solid #f00;background:#fff;padding: .2em .8em}
+span.wpcf7-list-item{display:inline-block;margin:0 0 0 1em}
+span.wpcf7-list-item-label::before,span.wpcf7-list-item-label::after{content:" "}
+.wpcf7-display-none{display:none}
+div.wpcf7 .ajax-loader{visibility:hidden;display:inline-block;background-image:url('/web/20190219023902im_/https://web240.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif');width:16px;height:16px;border:none;padding:0;margin:0 0 0 4px;vertical-align:middle}
+div.wpcf7 .ajax-loader.is-active{visibility:visible}
+div.wpcf7 div.ajax-error{display:none}
+div.wpcf7 .placeheld{color:#888}
+div.wpcf7 input[type="file"]{cursor:pointer}
+div.wpcf7 input[type="file"]:disabled{cursor:default}
+div.wpcf7 .wpcf7-submit:disabled{cursor:not-allowed}
