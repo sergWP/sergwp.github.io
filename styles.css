@@ -6,7 +6,7 @@ a:hover{}
 .clear{clear:both}
 h1,h2,h3,h4,h5{margin:0;padding:0}
 #wrap{width:100%;margin:0 auto}
-#header{background:#fafafa}
+#header{background:#fff}
 .colors{height:5px;margin-left:40px;max-width:800px;width:40%}
 .colors div{height:100%;width:20%;display:block;float:left}
 
@@ -82,7 +82,7 @@ a.logolink{color:#4F4F4F}
 
 #works a{
     background-image: url(./icons/dots-menu.svg);
-    background-color: #fff;
+    background-color: #fafafa;
 }
 #works a:hover{
     background-position: 25px;
