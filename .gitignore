@@ -1,3 +1,6 @@
 .idea
 .DS_Store
 .Saved/
+/prepros/
+/styles-min.css.map
+/prepros.config
