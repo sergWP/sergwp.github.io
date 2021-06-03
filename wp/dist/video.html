@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles-min.css">
+    <title>Load video by click</title>
+
+    <style>
+        .text-wrapper,
+        .video-wrapper {                    /* main video wrapper*/
+            width: 50%;
+            position: relative;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .video-wrapper__overlay {           /* overlay style */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 90%;
+            height: 90%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .video-wrapper__overlay.playing {       /* hide overlay */
+            display: none;
+            z-index: -1;
+        }
+
+        .video-wrapper__overlay:before {        /* play button */
+            content: "";
+            position: absolute;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMzkuODkyIDMyLjE5MmExIDEgMCAwMTAgMS42MTZMMjguMzQgNDIuMjMzYTEgMSAwIDAxLTEuNTg5LS44MDh2LTE2Ljg1YTEgMSAwIDAxMS41OS0uODA4bDExLjU1MiA4LjQyNXoiIGZpbGw9IiMzMDMyNDQiLz48L3N2Zz4=);
+            width: 64px;
+            height: 64px;
+            background-repeat: no-repeat;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(1);
+            transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+        }
+
+        .video-wrapper__overlay:hover:before {              /* button effect */
+            transform: translate(-50%,-50%) scale(1.1);
+        }
+
+        .video-wrapper__iframe-wrap {                      /* iframe wrapper */
+            width: 100%;
+            height: 0;
+            padding-bottom: 50%;
+            overflow: hidden;
+        }
+
+        .video-wrapper__iframe iframe,
+        .video-wrapper__iframe {                          /* iframe  */
+            max-width: 90%!important;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 90%!important;
+            height: 90%!important;
+            transform: translate(-50%, -50%);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Load video by click</h1>
+    </header>
+
+    <div class="flex">
+
+        <div class="text-wrapper">
+            <h2>YouTube</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nibh magna. Curabitur eleifend at arcu quis fermentum. Integer nibh sapien, sollicitudin eget libero ac, porta rhoncus massa. Sed porttitor sapien vitae malesuada vehicula. Suspendisse fermentum lorem vel mi ornare hendrerit. Proin commodo pretium felis. Proin hendrerit est vel sagittis fermentum. Sed dui odio, viverra non interdum quis, sollicitudin ac ante.</p>
+        </div>
+        <!-- Video 1 -->
+        <div class="video-wrapper">
+            <div class="video-wrapper__overlay" style="background-image: url('https://img.youtube.com/vi/aoCr78p0gYo/maxresdefault.jpg')"></div>
+            <div class="video-wrapper__iframe-wrap">
+                <div class="video-wrapper__iframe" data-url="https://www.youtube.com/embed/aoCr78p0gYo"></div>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-wrapper">
+            <div class="video-wrapper__overlay" style="background-image: url('https://i.vimeocdn.com/video/442872475_1280x720')"></div>
+            <div class="video-wrapper__iframe-wrap">
+                <div class="video-wrapper__iframe" data-url="https://player.vimeo.com/video/69893605"></div>
+            </div>
+        </div>
+        <div class="text-wrapper">
+            <h2>Vimeo</h2>
+            <p>Phasellus in finibus orci. Fusce interdum sapien imperdiet commodo blandit. Cras eget ultrices purus. Nullam consectetur blandit sapien a rutrum. Mauris commodo fermentum ipsum et aliquet. Suspendisse quis scelerisque risus, et iaculis elit. Phasellus ac fermentum magna. Quisque efficitur eu nulla vel pellentesque. Nam condimentum metus metus, sit amet ultricies leo dapibus ut. Quisque vitae suscipit dui, quis tincidunt neque.</p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function videoPlay(self, youtube) {
+    let src = self.parentNode.querySelector(youtube).getAttribute('data-url'),
+        yPlay = `${src}?rel=0&autoplay=1`;
+
+    if(src.length) {
+        self.parentNode.querySelector(youtube).innerHTML = `<iframe src="${yPlay}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        setTimeout(() => { self.classList.add('playing'); }, 1000);
+    }
+}
+
+
+if(document.querySelector('.video-wrapper')) {
+    let videoOverlay = document.querySelectorAll('.video-wrapper__overlay');
+    [].forEach.call(videoOverlay, function(e) {
+        e.addEventListener('click', function H() {
+            let __this = this;
+            videoPlay(
+                __this,
+                '.video-wrapper__iframe'
+            );
+        });
+    });
+}
+</script>
+
+</body>
+</html>
