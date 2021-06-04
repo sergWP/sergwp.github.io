@@ -72,37 +72,54 @@
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>Load video by click</h1>
-    </header>
+<div class="single">
 
-    <div class="flex">
+    <div class="container">
+        <header>
+            <h1>Load video by click</h1>
+        </header>
 
-        <div class="text-wrapper">
-            <h2>YouTube</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nibh magna. Curabitur eleifend at arcu quis fermentum. Integer nibh sapien, sollicitudin eget libero ac, porta rhoncus massa. Sed porttitor sapien vitae malesuada vehicula. Suspendisse fermentum lorem vel mi ornare hendrerit. Proin commodo pretium felis. Proin hendrerit est vel sagittis fermentum. Sed dui odio, viverra non interdum quis, sollicitudin ac ante.</p>
-        </div>
-        <!-- Video 1 -->
-        <div class="video-wrapper">
-            <div class="video-wrapper__overlay" style="background-image: url('https://img.youtube.com/vi/aoCr78p0gYo/maxresdefault.jpg')"></div>
-            <div class="video-wrapper__iframe-wrap">
-                <div class="video-wrapper__iframe" data-url="https://www.youtube.com/embed/aoCr78p0gYo"></div>
+        <div class="flex">
+
+            <div class="text-wrapper">
+                <h2>YouTube</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nibh magna. Curabitur eleifend at arcu quis fermentum. Integer nibh sapien, sollicitudin eget libero ac, porta rhoncus massa. Sed porttitor sapien vitae malesuada vehicula. Suspendisse fermentum lorem vel mi ornare hendrerit. Proin commodo pretium felis. Proin hendrerit est vel sagittis fermentum. Sed dui odio, viverra non interdum quis, sollicitudin ac ante.</p>
             </div>
-        </div>
-
-        <!-- Video 2 -->
-        <div class="video-wrapper">
-            <div class="video-wrapper__overlay" style="background-image: url('https://i.vimeocdn.com/video/442872475_1280x720')"></div>
-            <div class="video-wrapper__iframe-wrap">
-                <div class="video-wrapper__iframe" data-url="https://player.vimeo.com/video/69893605"></div>
+            <!-- Video 1 -->
+            <div class="video-wrapper">
+                <div class="video-wrapper__overlay" style="background-image: url('https://img.youtube.com/vi/aoCr78p0gYo/maxresdefault.jpg')"></div>
+                <div class="video-wrapper__iframe-wrap">
+                    <div class="video-wrapper__iframe" data-url="https://www.youtube.com/embed/aoCr78p0gYo"></div>
+                </div>
             </div>
-        </div>
-        <div class="text-wrapper">
-            <h2>Vimeo</h2>
-            <p>Phasellus in finibus orci. Fusce interdum sapien imperdiet commodo blandit. Cras eget ultrices purus. Nullam consectetur blandit sapien a rutrum. Mauris commodo fermentum ipsum et aliquet. Suspendisse quis scelerisque risus, et iaculis elit. Phasellus ac fermentum magna. Quisque efficitur eu nulla vel pellentesque. Nam condimentum metus metus, sit amet ultricies leo dapibus ut. Quisque vitae suscipit dui, quis tincidunt neque.</p>
+
+            <!-- Video 2 -->
+            <div class="video-wrapper">
+                <div class="video-wrapper__overlay" style="background-image: url('https://i.vimeocdn.com/video/442872475_1280x720')"></div>
+                <div class="video-wrapper__iframe-wrap">
+                    <div class="video-wrapper__iframe" data-url="https://player.vimeo.com/video/69893605"></div>
+                </div>
+            </div>
+            <div class="text-wrapper">
+                <h2>Vimeo</h2>
+                <p>Phasellus in finibus orci. Fusce interdum sapien imperdiet commodo blandit. Cras eget ultrices purus. Nullam consectetur blandit sapien a rutrum. Mauris commodo fermentum ipsum et aliquet. Suspendisse quis scelerisque risus, et iaculis elit. Phasellus ac fermentum magna. Quisque efficitur eu nulla vel pellentesque. Nam condimentum metus metus, sit amet ultricies leo dapibus ut. Quisque vitae suscipit dui, quis tincidunt neque.</p>
+            </div>
+
         </div>
 
+    </div>
+
+    <div class="back-container">
+        <div id="back"></div>
+    </div>
+
+</div>
+
+<div id="footer">
+    <div id="colophon">
+        <div class="foot-logo">Serg Kuzmenko<span>wordpress expert</span></div>
+        <div class="foot-phone">serg.wp<span>skype</span></div>
+        <div class="foot-mail">serg.wp.pro@gmail.com<span>email</span></div>
     </div>
 </div>
 
@@ -130,6 +147,18 @@ if(document.querySelector('.video-wrapper')) {
         });
     });
 }
+
+function backlink() {
+    setTimeout(function() {
+        window.location = "https://sergWP.github.io/wp/";
+    }, 1000);
+}
+
+let back = document.getElementById("back");
+back.addEventListener("mouseover", function() {
+    backlink();
+});
+
 </script>
 
 </body>
